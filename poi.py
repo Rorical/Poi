@@ -5,7 +5,6 @@ import etcd3
 import hnswlib
 import numpy as np
 import os
-import lock
 
 class RWLock(object):
     """ RWLock class; this is meant to allow an object to be read from by
