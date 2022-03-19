@@ -84,7 +84,7 @@ INDEX_PERSIST_FILE = "index.bin"
 class Poi(object):
     def __init__(self, etcdConf, dim, ef, m):
         self.dim = dim
-        self.lock = lock.RWLock()
+        self.lock = RWLock()
         self.database = etcd3.client(**etcdConf)
         
         maxele_raw = self.database.get('max_element')[0]
