@@ -1,2 +1,2 @@
-from . import Poi
-__all__ = ['Poi']
+from . import poi
+__all__ = ['poi']
